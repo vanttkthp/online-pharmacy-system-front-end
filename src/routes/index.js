@@ -21,6 +21,11 @@ export const routes = [
         isShowHeader: true
     },
     {
+        path: '/sign',
+        page: Signin,
+        isShowHeader: true
+    },
+    {
         path: '/*',
         page: NotFoundPage
     }
