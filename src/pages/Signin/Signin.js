@@ -1,24 +1,19 @@
 import React, { useState } from 'react'
-import * as UserService from '../../services/User'
 
 import './Signin.css'
 import { Link, useNavigate } from 'react-router-dom'
-import IconCancel from '../../components/IconComponents/IconCancel/IconCancel'
+// import IconCancel from '../../components/IconComponents/IconCancel/IconCancel' //thieu 
 
 import bgsignin from'../../assets/images/bg-signin.png'
 import sigin from '../../assets/images/signin.png'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons'
-import { useMutationHooks } from '../../hooks/useMutationHook'
 
 const Signin = () => {
 
   const navigate = useNavigate()
 
-  const mutation = useMutationHooks(
-    data => UserService.loginUser(data)
-  )
 
   const [showPassword, setShowPassword] = useState(false);
   const [email, setEmail] = useState('');
@@ -36,12 +31,6 @@ const Signin = () => {
     setPassword(event.target.value);
   };
 
-  const handleSignIn = () => {
-    mutation.mutate({
-      email,
-      password
-    })
-  }
 
   return (
     <div className='signin-ctn'>
@@ -53,7 +42,7 @@ const Signin = () => {
                 <img src={sigin}/>
             </div>
             <div className='form-signin-container'>
-                <IconCancel/>
+                {/* <IconCancel/> */}
                 <form className='form-sigin-ctn' action="#" method="post">
                     <div className='text-title-singin'>Hello ! Wellcome to Long Chau</div>
                     <div className='input-singin-ctn'> 
@@ -70,7 +59,7 @@ const Signin = () => {
                         </div>
                     </div>
                     <p className='text-small'>Forgot Password ?</p>
-                    <button type="submit" className='shadow' onClick={handleSignIn}>Login</button>
+                    <button type="submit" className='shadow' >Login</button>
                 </form>
                 <div className='link-signup-ctn'>
                     <div className='text-small'>Don't have an account?</div>

@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyleNameProduct, WrapperCardStyle, WrapperDiscountText, WrapperPriceText, WrapperReportText, WrapperStyleTextSell } from './style'
 import { StarFilled } from '@ant-design/icons'
-import logo from '../../assets/images/logo.png'
+import logo from '../../assets/images/huge.png'
 import { useNavigate } from 'react-router-dom'
 // import { convertPrice } from '../../utils'
 
