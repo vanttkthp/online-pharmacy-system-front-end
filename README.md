@@ -53,7 +53,7 @@ To run the Online Pharmacy System locally, follow these steps:
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/your/repository.git
+    git clone https://github.com/vanttkthp/online-pharmacy-system-front-end.git
     ```
 
 2. **Install Dependencies:**
