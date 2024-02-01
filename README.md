@@ -88,4 +88,4 @@ We welcome contributions from the community. If you want to contribute to our pr
 
 This project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute the code as per the terms of the license.
 
-For any questions or feedback, please contact us at [team@example.com](mailto:team@example.com).
+For any questions or feedback, please contact us at [here](mailto:congvan2357@gmail.com).
