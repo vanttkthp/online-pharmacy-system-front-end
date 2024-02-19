@@ -50,7 +50,7 @@
 }
 
 .form-sigin-ctn{
-    width: 25vw;
+    width: 27vw;
 }
 
 .form-signin-container{
@@ -62,7 +62,7 @@
 }
 
 .input-singin-ctn input{
-    width: 100%;
+    width: 86%;
     height: 3rem;
     border-radius: 0.75rem;
     margin: 10px 0;
@@ -79,6 +79,7 @@
     font-weight: 500;
     color: var(--color-white);
     margin: 10px 0;
+    cursor: pointer;
 }
 
 .text-title-singin{

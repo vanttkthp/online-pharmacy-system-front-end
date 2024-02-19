@@ -9,7 +9,7 @@ const SliderComponent = ({ arrImages }) => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 3000,
   };
 
   return (
@@ -22,7 +22,7 @@ const SliderComponent = ({ arrImages }) => {
               src={image}
               alt="slider"
               width="100%"
-              height="500px"
+              height="100%"
               preview={false}
             />
           );

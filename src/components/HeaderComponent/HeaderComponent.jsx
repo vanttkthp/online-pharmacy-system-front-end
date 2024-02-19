@@ -21,18 +21,18 @@ export const HeaderComponent = () => {
         <Col span={4}>
           <WrapperTextHeader>Pharmacy</WrapperTextHeader>
         </Col>
-        <Col span={14}>
+        <Col span={13}>
           <ButtonInputSearch
             size="large"
             bordered={false}
-            textButton="Search"
-            placeholder="search here"
+            textButton="Tìm kiếm"
+            placeholder="Tìm tên thuốc, bệnh lý, thực phẩm chức năng,..."
             backgroundColorButton="#fff"
           />
         </Col>
         <Col
           span={6}
-          style={{ display: "flex", gap: "20px", alignItems:"center" }}
+          style={{ display: "flex", gap: "20px", alignItems:"center", justifyContent:"space-between" }}
         >
           <WrapperHeaderAccount>
             <UserOutlined style={{ fontSize: "30px" }} />
