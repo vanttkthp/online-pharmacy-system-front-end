@@ -9,6 +9,7 @@ import sigin from '../../assets/images/signin.png'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons'
+import IconCancelComponent from '../../components/IconCancelComponent/IconCancelComponent'
 
 const Signin = () => {
 
@@ -42,9 +43,9 @@ const Signin = () => {
                 <img src={sigin}/>
             </div>
             <div className='form-signin-container'>
-                {/* <IconCancel/> */}
+                <IconCancelComponent/>
                 <form className='form-sigin-ctn' action="#" method="post">
-                    <div className='text-title-singin'>Hello ! Wellcome to Long Chau</div>
+                    <div className='text-title-singin'>Hello ! Wellcome to Pharmacy</div>
                     <div className='input-singin-ctn'> 
                         <label >Email address</label>
                         <input value={email} type="text" className='shadow' placeholder='Email address' onChange={handleOnchangeEmail}></input>
@@ -59,7 +60,7 @@ const Signin = () => {
                         </div>
                     </div>
                     <p className='text-small'>Forgot Password ?</p>
-                    <button type="submit" className='shadow' >Login</button>
+                    <button type="submit" className='shadow'>Login</button>
                 </form>
                 <div className='link-signup-ctn'>
                     <div className='text-small'>Don't have an account?</div>

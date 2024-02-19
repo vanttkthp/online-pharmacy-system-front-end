@@ -22,9 +22,8 @@ export const routes = [
         isShowHeader: true
     },
     {
-        path: '/sign',
-        page: Signin,
-        isShowHeader: true
+        path: '/signin',
+        page: Signin
     },
     {
         path: '/*',

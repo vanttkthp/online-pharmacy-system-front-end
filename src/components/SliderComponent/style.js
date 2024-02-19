@@ -22,11 +22,11 @@ export const WrapperSliderStyle = styled(Slider)`
   }
   & .slick-dots {
     z-index: 10;
-    bottom: -2px !important;
+    bottom: 20px !important;
     li {
       button {
         &::before {
-          color: rgb(255, 255, 0.5);
+          color: #F8EDFF;
         }
       }
     }
@@ -40,5 +40,5 @@ export const WrapperSliderStyle = styled(Slider)`
   }
 `;
 export const WrapperSlider = styled.div`
-  padding: 20px 0px
+  padding: 20px 0px;
 `;
