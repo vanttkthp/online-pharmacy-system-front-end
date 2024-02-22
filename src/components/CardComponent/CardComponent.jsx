@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyleNameProduct, WrapperCardStyle, WrapperDiscountText, WrapperPriceText, WrapperReportText, WrapperStyleTextSell } from './style'
+import { StyleNameProduct, WrapperCardStyle, WrapperDiscountText, WrapperPriceText, WrapperReportText, WrapperStyleSale, WrapperStyleTextSell } from './style'
 import { StarFilled } from '@ant-design/icons'
 import logo from '../../assets/images/huge.png'
 import { useNavigate } from 'react-router-dom'
@@ -20,17 +20,9 @@ const CardComponent = (props) => {
             cover={<img alt="example" src="https://cdn.nhathuoclongchau.com.vn/unsafe/636x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/00029616_mind_engergy_jpanwell_60v_1132_6017_large_9e18e6bcc0.JPG" />}
             onClick={() =>  handleDetailsProduct(id)}
         >
-            <img
-                src={logo}
-                style={{
-                    width: '68px',
-                    height: '14px',
-                    position: 'absolute',
-                    top: -1,
-                    left: -1,
-                    borderTopLeftRadius: '3px'
-                }}
-            />
+            <WrapperStyleSale>
+                -80.000đ
+            </WrapperStyleSale>
             <StyleNameProduct>{name}</StyleNameProduct>
             <WrapperReportText>
                 <span style={{ marginRight: '4px' }}>
