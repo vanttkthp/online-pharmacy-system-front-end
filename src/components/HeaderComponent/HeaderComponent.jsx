@@ -18,13 +18,12 @@ const { Search } = Input;
 
 export const HeaderComponent = () => {
   return (
-    <div className="header-ctn">
+    <div>
       <WrapperHeader gutter={12}>
         <Col span={4}>
           <Link to="/">
             <WrapperTextHeader>Pharmacy</WrapperTextHeader>
           </Link>
-          
         </Col>
         <Col span={13}>
           <ButtonInputSearch
