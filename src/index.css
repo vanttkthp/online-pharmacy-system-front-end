@@ -21,7 +21,7 @@ code {
   --color-blue:#357BE5;
   --color-gray:#DDE6ED;
   --color-white:#fff;
-  --color-black:#1F1717;
+  --color-black:#242424;
   --color-red:#FF0303;
 }
 
@@ -31,4 +31,8 @@ input{
 
 input:focus{
   outline: none;
+}
+
+a{
+  text-decoration: none;
 }
