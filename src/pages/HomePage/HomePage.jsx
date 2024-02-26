@@ -13,6 +13,7 @@ import CardComponent from "../../components/CardComponent/CardComponent";
 
 import { DownOutlined, SmileOutlined } from "@ant-design/icons";
 import { Space } from "antd";
+import HealthCheckComponet from "../../components/HealthCheckComponent/HealthCheckComponet";
 
 const { Title } = Typography;
 const items = [
@@ -100,7 +101,7 @@ export const HomePage = () => {
       </div>
       <div
         id="container"
-        style={{ backgroundColor: "#fff3e1", padding: "0px 120px" }}
+        style={{ backgroundImage: "linear-gradient(#fff3e1, #FFFFFF)", padding: "0px 120px" }}
       >
         <Row>
           <TitleComponent>
@@ -112,6 +113,7 @@ export const HomePage = () => {
             <CardComponent />
           </div>
         </Row>
+        <HealthCheckComponet/>
       </div>
     </>
   );
