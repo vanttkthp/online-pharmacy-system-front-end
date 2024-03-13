@@ -3,7 +3,7 @@ import { HomePage } from "../pages/HomePage/HomePage";
 import { NotFoundPage } from "../pages/NotFoundPage/NotFoundPage";
 import { OrderPage } from "../pages/OrderPage/OrderPage";
 import { ProductsPage } from "../pages/ProductsPage/ProductsPage";
-import Signin from "../pages/Signin/Signin";
+import SignIn from "../pages/SignIn/SignIn";
 
 export const routes = [
     {
@@ -22,8 +22,9 @@ export const routes = [
         isShowHeader: true
     },
     {
-        path: '/signin',
-        page: Signin
+        path: '/sign-in',
+        page: SignIn,
+        isShowHeader: true
     },
     {
         path: '/*',
