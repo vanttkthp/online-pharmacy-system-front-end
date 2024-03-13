@@ -1,0 +1,11 @@
+.icon-cancel-ctn{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.icon-cancel{
+    width: 30px;
+    height: 30px;
+    color: var(--color-black);
+}

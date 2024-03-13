@@ -1,0 +1,127 @@
+.signin-ctn{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.bg-signin-ctn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+.bg-signin-ctn img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.content-signin-ctn{
+    background-color: var(--color-gray);
+    padding: 2rem;
+    width: 57vw;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    border-radius: 0.75rem;
+}
+
+.img-signin-ctn{
+    height: 70vh;
+    width: 25vw;
+    background-color: var(--color-white);
+    overflow: hidden;
+    border-radius: 0.75rem;
+}
+
+.img-signin-ctn img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.form-sigin-ctn{
+    width: 27vw;
+}
+
+.form-signin-container{
+    height: 70vh;
+}
+
+.input-singin-ctn label{
+    font-size: 17px;
+}
+
+.input-singin-ctn input{
+    width: 86%;
+    height: 3rem;
+    border-radius: 0.75rem;
+    margin: 10px 0;
+    padding: 0px 50px 0px 10px;
+}
+
+.form-sigin-ctn button{
+    background-color: var(--color-blue);
+    border: 0;
+    width: 100%;
+    height: 3rem;
+    border-radius: 0.75rem;
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--color-white);
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.text-title-singin{
+    font-size: 27px;
+    font-weight: 500;
+    margin: 20px 0;
+}
+
+.text-small{
+    color: black;
+    font-size: 13px;
+    margin: 0;
+    margin-right: 5px;
+}
+
+.link-signup-ctn{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: var(--color-blue);
+}
+
+.link-signup{
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.input-password-ctn{
+    position: relative;
+}
+
+.icon-eye-ctn{
+    position: absolute;
+    top:0;
+    right:0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.icon-eye{
+    font-size: 15px;
+}

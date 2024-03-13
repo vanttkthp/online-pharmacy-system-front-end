@@ -8,6 +8,8 @@ export const WrapperCardStyle = styled(Card)`
         width: 200px;
     },
     position: relative;
+    border-radius: 10px;
+    overflow: hidden;
     background-color: ${props => props.disabled ? '#ccc' : '#fff'};
     cursor: ${props => props.disabled ? 'not-allowed' : 'pointer'}
 `
@@ -44,4 +46,17 @@ export const WrapperStyleTextSell = styled.span`
     font-size: 15px;
     line-height: 24px;
     color: rgb(120, 120, 120)
+`
+
+export const WrapperStyleSale = styled.div`
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #F5473A , #D42214);
+    padding: 5px 8px;
+    color: #fff;
+    font-size:15px;
+    font-weight:500;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 `

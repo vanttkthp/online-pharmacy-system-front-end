@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .footer-ctn{
     width: 100%;
     border-top: 7px solid #2167DD;
@@ -33,4 +34,41 @@
     margin: 0px 120px;
     display: flex;
     justify-content: center;
+=======
+.footer-ctn{
+    width: 100%;
+    border-top: 7px solid #2167DD;
+    font-size: 14px;
+}
+
+.footer-list{
+    display: flex;
+    margin: 20px 120px 0px 120px;
+    padding-bottom: 5px;
+    justify-content: space-between;
+    border-bottom: 2px solid #EAEFFA;
+}
+
+.footer-column-title{
+    font-weight: bolder;
+    color: #3e4751;
+    text-transform: uppercase;
+}
+
+.footer-subitems{
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.footer-subitem{
+    color: var(--color-blue);
+    padding: 6px 0;
+    cursor: pointer;
+}
+
+.footer-info{
+    margin: 0px 120px;
+    display: flex;
+    justify-content: center;
+>>>>>>> 06fc7e0a076a2ccfce9ba5185c49c52f2bc3c7d8
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import { Col, Input } from "antd";
+
 import {
   WrapperHeader,
   WrapperHeaderAccount,
@@ -12,30 +13,35 @@ import {
   ShoppingCartOutlined,
 } from "@ant-design/icons";
 import ButtonInputSearch from "../ButtonInputSearch/ButtonInputSearch";
+import { Link} from 'react-router-dom'
 const { Search } = Input;
 
 export const HeaderComponent = () => {
   return (
     <div>
-      <WrapperHeader gutter={16}>
+      <WrapperHeader gutter={12}>
         <Col span={4}>
-          <WrapperTextHeader>Pharmacy</WrapperTextHeader>
+          <Link to="/">
+            <WrapperTextHeader>Pharmacy</WrapperTextHeader>
+          </Link>
         </Col>
-        <Col span={14}>
+        <Col span={13}>
           <ButtonInputSearch
             size="large"
             bordered={false}
-            textButton="Search"
-            placeholder="search here"
+            textButton="Tìm kiếm"
+            placeholder="Tìm tên thuốc, bệnh lý, thực phẩm chức năng,..."
             backgroundColorButton="#fff"
           />
         </Col>
         <Col
           span={6}
-          style={{ display: "flex", gap: "20px", alignItems:"center" }}
+          style={{ display: "flex", gap: "20px", alignItems:"center", justifyContent:"space-between" }}
         >
           <WrapperHeaderAccount>
-            <UserOutlined style={{ fontSize: "30px" }} />
+            <Link to="/signin" style={{ color: "#fff" }}>
+              <UserOutlined style={{ fontSize: "30px" }} />
+            </Link>
             <div>
               <WrapperTextHeaderSmall>Login/Sign in</WrapperTextHeaderSmall>
               <div>
