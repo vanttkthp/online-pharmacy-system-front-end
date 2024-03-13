@@ -2,8 +2,8 @@ import { HomePage } from "../pages/HomePage/HomePage";
 import { NotFoundPage } from "../pages/NotFoundPage/NotFoundPage";
 import { OrderPage } from "../pages/OrderPage/OrderPage";
 import { ProductsPage } from "../pages/ProductsPage/ProductsPage";
-import Signin from "../pages/Signin/Signin";
-import Signup from "../pages/Signup/Signup";
+import SignIn from "../pages/SignIn/SignIn";
+import SignUp from "../pages/SignUp/SignUp";
 
 export const routes = [
     {
@@ -23,11 +23,11 @@ export const routes = [
     },
     {
         path: '/sign-in',
-        page: Signin
+        page: SignIn
     },
     {
         path: '/sign-up',
-        page: Signup
+        page: SignUp
     },
     {
         path: '/*',
