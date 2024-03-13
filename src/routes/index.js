@@ -23,11 +23,11 @@ export const routes = [
     },
     {
         path: '/sign-in',
-        page: SignIn
+        page: Signin
     },
     {
         path: '/sign-up',
-        page: SignUp
+        page: Signup
     },
     {
         path: '/*',
