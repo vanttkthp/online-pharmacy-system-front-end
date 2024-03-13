@@ -1,18 +1,19 @@
 import React from "react";
 import TypeProduct from "../../components/TypeProduct/TypeProduct";
-import { WrapperTypeProduct } from "./style";
+import { TitleComponent, WrapperTypeProduct } from "./style";
 import SliderComponent from "../../components/SliderComponent/SliderComponent";
 import slider1 from "../../assets/images/slider1.webp";
 import slider2 from "../../assets/images/slider2.webp";
 import slider3 from "../../assets/images/slider3.webp";
 import slider4 from "../../assets/images/slider4.webp";
 
-import { Col, Row } from "antd";
+import { Col, Dropdown, Row } from "antd";
 import { Typography } from "antd";
 import CardComponent from "../../components/CardComponent/CardComponent";
 
 import { DownOutlined, SmileOutlined } from "@ant-design/icons";
-import { Dropdown, Space } from "antd";
+import { Space } from "antd";
+import HealthCheckComponet from "../../components/HealthCheckComponent/HealthCheckComponet";
 
 const { Title } = Typography;
 const items = [
@@ -64,11 +65,11 @@ const items = [
 
 export const HomePage = () => {
   const arr = [
-    "Medicines",
-    "Vitamins",
-    "First Aid Supplies",
-    "Personal Care Items",
-    "Health Supplements",
+    "Thực phẩm chức năng",
+    "Dược mỹ phẩm",
+    "Chăm sóc cá nhân",
+    "Thuốc",
+    "Thiết bị y tế",
   ];
   return (
     <>
@@ -100,18 +101,19 @@ export const HomePage = () => {
       </div>
       <div
         id="container"
-        style={{ backgroundColor: "#fff3e1", padding: "0px 120px" }}
+        style={{ backgroundImage: "linear-gradient(#fff3e1, #FFFFFF)", padding: "0px 120px" }}
       >
         <Row>
-          <Title level={4} style={{ marginTop: "10px" }}>
-            Most favorable products
-          </Title>
+          <TitleComponent>
+            Sản phẩm bán chạy
+          </TitleComponent>
         </Row>
         <Row>
           <div style={{ display: "flex", gap: "20px" }}>
             <CardComponent />
           </div>
         </Row>
+        <HealthCheckComponet/>
       </div>
     </>
   );

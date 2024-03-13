@@ -41,4 +41,5 @@ export const WrapperSliderStyle = styled(Slider)`
 `;
 export const WrapperSlider = styled.div`
   padding: 20px 0px;
+  border-radius:1500px;
 `;
