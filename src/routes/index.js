@@ -2,7 +2,7 @@ import { HomePage } from "../pages/HomePage/HomePage";
 import { NotFoundPage } from "../pages/NotFoundPage/NotFoundPage";
 import { OrderPage } from "../pages/OrderPage/OrderPage";
 import { ProductsPage } from "../pages/ProductsPage/ProductsPage";
-import Signin from "../pages/Signin/Signin";
+import Signin from "../pages/SignIn/SignIn";
 import Signup from "../pages/Signup/Signup";
 
 export const routes = [

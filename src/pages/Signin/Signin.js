@@ -11,7 +11,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons'
 import IconCancelComponent from '../../components/IconCancelComponent/IconCancelComponent'
 
-const Signin = () => {
+const SignIn = () => {
 
   const navigate = useNavigate()
 
@@ -74,4 +74,4 @@ const Signin = () => {
   )
 }
 
-export default Signin
+export default SignIn
