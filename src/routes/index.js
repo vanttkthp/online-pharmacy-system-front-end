@@ -22,11 +22,11 @@ export const routes = [
         isShowHeader: true
     },
     {
-        path: '/signin',
+        path: '/sign-in',
         page: Signin
     },
     {
-        path: '/signup',
+        path: '/sign-up',
         page: Signup
     },
     {
