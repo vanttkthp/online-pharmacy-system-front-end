@@ -13,10 +13,14 @@ import {
   ShoppingCartOutlined,
 } from "@ant-design/icons";
 import ButtonInputSearch from "../ButtonInputSearch/ButtonInputSearch";
-import { Link} from 'react-router-dom'
+import { Link, useNavigate} from 'react-router-dom'
 const { Search } = Input;
 
 export const HeaderComponent = () => {
+  const navigate = useNavigate();
+  const handleNavigateLogin = () => {
+    navigate('/sign-in')
+  }
   return (
     <div>
       <WrapperHeader gutter={12}>
@@ -42,7 +46,7 @@ export const HeaderComponent = () => {
             <Link to="/signin" style={{ color: "#fff" }}>
               <UserOutlined style={{ fontSize: "30px" }} />
             </Link>
-            <div>
+            <div onClick={handleNavigateLogin} style={{cursor: 'pointer'}}>
               <WrapperTextHeaderSmall>Login/Sign in</WrapperTextHeaderSmall>
               <div>
                 <WrapperTextHeaderSmall>Account</WrapperTextHeaderSmall>
