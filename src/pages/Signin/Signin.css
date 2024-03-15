@@ -105,6 +105,7 @@
 .link-signup{
     font-weight: 500;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .input-password-ctn{
