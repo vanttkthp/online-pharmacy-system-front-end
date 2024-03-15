@@ -14,9 +14,11 @@ import axios from "axios";
 import { useMutation } from "@tanstack/react-query";
 import * as UserService from "../../services/UserService";
 import { useMutationHooks } from "../../hooks/useMutationHook";
+import Loading from "../../components/LoadingComponent/Loading";
 
 const SignIn = () => {
   const navigate = useNavigate();
+  
   const mutation = useMutationHooks((data) => UserService.loginUser(data));
   const {data, isLoading} = mutation
   console.log("mutation", mutation);
@@ -91,10 +93,12 @@ const SignIn = () => {
               </div>
             </div>
             <p className="text-small">Forgot Password ?</p>
-            {data?.status === 'ok' && <span style={{color: 'red'}}>{data?.message}</span>}
+            {data?.status === 'ERR' && <span style={{color: 'red'}}>{data?.message}</span>}
+           
             <button type="submit" className="shadow" onClick={handleSignIn}>
               Login
             </button>
+          
           </form>
           <div className="link-signup-ctn">
             <div className="text-small">Don't have an account?</div>

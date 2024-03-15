@@ -11,7 +11,9 @@ import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 import IconCancelComponent from "../../components/IconCancelComponent/IconCancelComponent";
 import ButtonComponent from "../../components/ButtonComponent/ButtonComponent";
 import ButtonInputSearch from "../../components/ButtonInputSearch/ButtonInputSearch";
-import { Button } from 'antd'
+import { Button } from "antd";
+import * as UserService from "../../services/UserService";
+import { useMutationHooks } from "../../hooks/useMutationHook";
 
 const Signup = () => {
   const navigate = useNavigate();
@@ -22,6 +24,8 @@ const Signup = () => {
   const [confirmPassword, setConfirmPassword] = useState("");
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
 
+  const mutation = useMutationHooks((data) => UserService.signupUser(data));
+  const {data, isLoading} = mutation
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
   };
@@ -40,6 +44,7 @@ const Signup = () => {
     setConfirmPassword(event.target.value);
   };
   const handleSignUp = () => {
+    mutation.mutate({email, password, confirmPassword})
     console.log("signup: ", email, password, confirmPassword);
   };
 
@@ -111,16 +116,16 @@ const Signup = () => {
               </div>
             </div>
             <p className="text-small">Forgot Password ?</p>
+            {data?.status === 'ERR' && <span style={{color: 'red'}}>{data?.message}</span>}
             <button type="submit" className="shadow" onClick={handleSignUp}>
               Login
             </button>
           </form>
           <div className="link-signup-ctn">
             <div className="text-small">Don't have an account?</div>
-            <Link to="/sign-in" >
+            <Link to="/sign-in">
               <p className="link-signup">Sign in</p>
             </Link>
-            
           </div>
         </div>
       </div>
